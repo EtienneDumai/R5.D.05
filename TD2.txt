@@ -1,0 +1,14 @@
+Requete 1 : 
+
+db.Articles.find({"QteStock":{$eq:0}});
+
+Requete 2 :
+
+db.Articles.find({"Categorie":{$regex:"Epicerie",$options:"i"}})
+
+Requete 3 :
+
+db.Articles.find({"Tva.LibelleTVA":{$regex:"Majoré",$options:"i"}},{"Descriptif":1,"Tva.LibelleTVA":1, "_id":0})
+
+Requete 4 :
+
